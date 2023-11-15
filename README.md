@@ -1,5 +1,3 @@
-¡Claro! Aquí tienes una versión más editable del README:
-
 ---
 
 # Bank Account Management System
