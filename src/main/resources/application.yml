@@ -1,5 +1,0 @@
-join-faces:
-  faces:
-    PROJECT_STAGE: Development
-  primefaces:
-    theme: overcast

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<h:html xmlns:f="http://xmlns.jcp.org/jsf/core" xmlns:h="http://xmlns.jcp.org/jsf/html" xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Bank Account Management System</title>
+        <link rel="stylesheet" href="https://unpkg.com/primeflex@latest/primeflex.css"/>
+    </h:head>
+    <h:body>
+        <div class="card">
+            <p:dataTable value="#{indexController.accounts}" var="account">
+                <h:outputText value="#{account.name}"/>
+                <f:facet name="header">
+                    <div class="flex justify-content-center flex-wrap card-container yellow-container">
+                        <div class="flex align-items-center justify-content-center w-20rem h-4rem bg-yellow-500 font-bold text-gray-900 border-round m-2">
+                            <h3>Bank Account Management System</h3>
+                        </div>
+                    </div>
+                </f:facet>
+                <p:column headerText="Id">
+                    <h:outputText value="#{account.id}"/>
+                </p:column>
+            </p:dataTable>
+        </div>
+    </h:body>
+</h:html>
+
